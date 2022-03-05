@@ -24,12 +24,12 @@ Ho fatto un semplice programma che in base al numero della fermata restituisce i
   - message: STRING (Un semplice messaggio del server, anche in caso di errore)
   - aggiornamento STRING (DATA) (La data e ora dell'ultimo aggiornamento degli orari)
   - transiti:
-     - 1
+     - 1<br>
        -1 STRING (Numero del bus, sempre a 3 cifre/lettere)<br>
        -2 STRING (Direzione del bus)<br>
        -3 STRING (Ora prevista per il passaggio del bus)<br>
        -4 STRING (Attesa prevista. Se vi da fastidio il ' fate FILTER_SANITIZE_NUMBER_INT)
-     - 2
+     - 2<br>
        -1 STRING (Numero del bus, sempre a 3 cifre/lettere)<br>
        -2 STRING (Direzione del bus)<br>
        -3 STRING (Ora prevista per il passaggio del bus)<br>
