@@ -36,4 +36,9 @@ Ho fatto un semplice programma che in base al numero della fermata restituisce i
        -4 STRING (Attesa prevista. Se vi da fastidio il ' fate FILTER_SANITIZE_NUMBER_INT)
        
 ## API Ufficiali dell'AMT Genova
-
+**Endpoint:** `https://www.amt.genova.it/amt/servizi/passaggitel.php`
+**Tipo di richiesta:** `POST`
+**Parametri obbligatori:** `CodiceFermata => INT (Codice della fermata); conferma => Conferma`
+**Esempio di una richiesta VALIDA**: `https://www.amt.genova.it/amt/servizi/passaggitel.php`
+**Risposta (esempio):**
+Pagina in HTML con tabella dei passaggi dei Bus
