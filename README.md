@@ -11,10 +11,10 @@ Non grantisco che siano le API utilizzate dall'applicazione ufficiale (sto prova
 ## API in Json
 Ho fatto un semplice programma che in base al numero della fermata restituisce i transiti in un comodo Json
 
-**Endpoint:** `https://api.fcosma.it/amt/fermata`
-**Tipo di richiesta:** `GET`
-**Parametri obbligatori:** `codice (INT)`
-**Esempio di una richiesta VALIDA**: `https://api.fcosma.it/amt/fermata?codice=0001`
+**Endpoint:** `https://api.fcosma.it/amt/fermata`<br>
+**Tipo di richiesta:** `GET`<br>
+**Parametri obbligatori:** `codice (INT)`<br>
+**Esempio di una richiesta VALIDA**: `https://api.fcosma.it/amt/fermata?codice=0001`<br>
 **Risposta (esempio):**
 ```json
 {"status":200, "message":"Autobus per la fermata 0001", "aggiornamento":"05/03/2022 - 12:19:43", "transiti":{"1":["032","S.F. DA PAOLA","12:31:54","12'"],"2":["032","S.F. DA PAOLA","12:46:14","27'"]}}
@@ -36,9 +36,9 @@ Ho fatto un semplice programma che in base al numero della fermata restituisce i
        -4 STRING (Attesa prevista. Se vi da fastidio il ' fate FILTER_SANITIZE_NUMBER_INT)
        
 ## API Ufficiali dell'AMT Genova
-**Endpoint:** `https://www.amt.genova.it/amt/servizi/passaggitel.php`
-**Tipo di richiesta:** `POST`
-**Parametri obbligatori:** `CodiceFermata => INT (Codice della fermata); conferma => Conferma`
-**Esempio di una richiesta VALIDA**: `https://www.amt.genova.it/amt/servizi/passaggitel.php`
+**Endpoint:** `https://www.amt.genova.it/amt/servizi/passaggitel.php`<br>
+**Tipo di richiesta:** `POST`<br>
+**Parametri obbligatori:** `CodiceFermata => INT (Codice della fermata); conferma => Conferma`<br>
+**Esempio di una richiesta VALIDA**: `https://www.amt.genova.it/amt/servizi/passaggitel.php`<br>
 **Risposta (esempio):**
 Pagina in HTML con tabella dei passaggi dei Bus
