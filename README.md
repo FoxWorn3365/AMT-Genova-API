@@ -14,11 +14,42 @@ Ho fatto un semplice programma che in base al numero della fermata restituisce i
 **Endpoint:** `https://api.fcosma.it/amt/fermata`<br>
 **Tipo di richiesta:** `GET`<br>
 **Parametri obbligatori:** `codice (INT)`<br>
-**Esempio di una richiesta VALIDA**: `https://api.fcosma.it/amt/fermata?codice=0001`<br>
+**Esempio di una richiesta VALIDA**: `https://api.fcosma.it/amt/fermata?codice=0416`<br>
 **Risposta (esempio):**
 ```json
-{"status":200, "message":"Autobus per la fermata 0001", "aggiornamento":"05/03/2022 - 12:19:43", "transiti":{"1":["032","S.F. DA PAOLA","12:31:54","12'"],"2":["032","S.F. DA PAOLA","12:46:14","27'"]}}
+{
+  "status": 200,
+  "message": "Autobus per la fermata 0416",
+  "aggiornamento": "07/10/2022 - 23:52:44",
+  "transiti": {
+    "1": {
+      "lineNumber": "618",
+      "lineDestination": "SAMPIERDARENA",
+      "arrivalTime": "00:01:18",
+      "waitingTime": "9'"
+    },
+    "2": {
+      "lineNumber": "606",
+      "lineDestination": "PRINCIPE FS",
+      "arrivalTime": "00:11:10",
+      "waitingTime": "18'"
+    },
+    "3": {
+      "lineNumber": "617",
+      "lineDestination": "BRIGNOLE FS",
+      "arrivalTime": "00:12:34",
+      "waitingTime": "20'"
+    },
+    "4": {
+      "lineNumber": "607",
+      "lineDestination": "BRIGNOLE FS",
+      "arrivalTime": "00:18:16",
+      "waitingTime": "26'"
+    }
+  }
+}
 ```
+
 **Valori:**
   - status: NUMBER INT (200 = success; 204 = nessun transito; 400 = fermata inesistente)
   - message: STRING (Un semplice messaggio del server, anche in caso di errore)
